@@ -1,0 +1,98 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  .sidebar {
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+    .title {
+      color: #000;
+      font-family: var(--ft1);
+      font-size: 15px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
+      position: relative;
+    }
+    ul.sidebar_cate li {
+      padding: 6px 0;
+      a {
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        font-weight: normal;
+      }
+    }
+  }
+  .productList {
+    width: calc(100% - 300px);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    .gitem {
+      padding: 0 10px;
+      cursor: pointer;
+      .gitem-img {
+        display: block;
+        position: relative;
+        padding-bottom: 130%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: opacity ease-out 0.4s;
+        background-image: var(bgImage);
+        transition: background-image 0.5s ease; /* 可选的过渡效果 */
+      }
+      /* .product {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+      } */
+
+      img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+      }
+      .details-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      &:hover .details-img {
+        opacity: 1;
+      }
+    }
+    .details {
+      padding: 15px 10px;
+      text-align: center;
+      a {
+        color: #444;
+        font-size: 13px;
+        text-transform: none;
+        font-weight: 500;
+      }
+      .grid-view-item__meta {
+        margin: 5px 0 10px;
+        .pr_price {
+          font-size: 14px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

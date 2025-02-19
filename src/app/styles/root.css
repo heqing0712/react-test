@@ -1,0 +1,12 @@
+:root{
+    --panel-bg-color:#111;
+    --builder-canvasBackground-color:#252525;
+    --drop-menu-bg: #fff;
+ 
+}
+
+:root.dark{
+    --drop-menu-bg: #2b2b2b;
+    --drop-menu-item-hover:#09f;
+ 
+}
